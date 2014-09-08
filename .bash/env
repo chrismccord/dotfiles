@@ -1,0 +1,16 @@
+#!/usr/bin/env sh
+
+# Vars
+export EDITOR="Sublime Text"
+# Rails
+export RACK_ENV="development"
+
+# Ruby
+export RUBY_GC_HEAP_INIT_SLOTS=800000
+export RUBY_HEAP_FREE_MIN=100000
+export RUBY_HEAP_SLOTS_INCREMENT=300000
+export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
+export RUBY_GC_MALLOC_LIMIT=79000000
+
+# rvm
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.

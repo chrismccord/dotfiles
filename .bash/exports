@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+export JAVA_HOME="/Library/Java/Home"
+export BUNDLER_EDITOR="mvim"
+

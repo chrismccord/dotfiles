@@ -1,0 +1,7 @@
+[user]
+  name = Chris McCord
+  email = chris@chrismccord.com
+[core]
+	editor = vim
+[color]
+  ui = 1

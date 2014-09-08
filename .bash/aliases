@@ -1,0 +1,23 @@
+#!/usr/bin/env sh
+
+alias reload='. ~/.bash_profile'
+alias dowork='sudo ruby ~/Documents/scripts/dowork.rb'
+# alias vim='mvim -v'
+
+# git
+#
+# retains last commit as staged
+alias git-undo='git reset --soft HEAD\^'
+alias timesheet='git log --oneline --author="`git config --get user.name`" --since="6am" --no-merges'
+
+function timesheet-copy(){ timesheet | head $1 | pbcopy; }
+
+# Postgres
+#
+alias start_postgres="launchctl load -w ~/Library/LaunchAgents/org.postgresql.postgres.plist"
+alias stop_postgres="launchctl unload -w ~/Library/LaunchAgents/org.postgresql.postgres.plist"
+alias pg_restore_local="pg_restore --verbose --clean --no-acl --no-owner -h localhost -U `whoami` -d $1 $2"
+
+# Labrador
+#
+alias labrador-start="cd $HOME/.labrador && bundle exec rails s -e production -p 7488"

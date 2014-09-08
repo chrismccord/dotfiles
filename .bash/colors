@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+
+# Inserts [branch-name] at end of shell
+green='\[\e[0;32m\]'
+endColor='\[\e[0m\]'
+red='\[\e[0;31m\]'
+blue='\[\e[1;34m\]'
+brown='\[\e[0;33m\]'
+lightBrown='\[\e[1;33m\]'
+cyan='\[\e[0;36m\]'
+PS1="${cyan}\u:\w${endColor}\$(git branch 2>/dev/null | grep -e '\* ' | sed 's/^..\(.*\)/${white}❮${endColor}${white}\1${endColor}${white}❯${endColor}/')⚡  "
+# PS1="${red}\u@\h:\w${endColor}\$(git branch 2>/dev/null | grep -e '\* ' | sed 's/^..\(.*\)/${brown}[\1]${endColor}/') \$ "
+
