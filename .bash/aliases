@@ -1,5 +1,6 @@
 #!/usr/bin/env sh
 
+alias tmux='tmux -2'
 alias reload='. ~/.bash_profile'
 alias dowork='sudo ruby ~/Documents/scripts/dowork.rb'
 # alias vim='mvim -v'

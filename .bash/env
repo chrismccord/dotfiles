@@ -1,7 +1,7 @@
 #!/usr/bin/env sh
 
 # Vars
-export EDITOR="Sublime Text"
+export EDITOR="vim"
 # Rails
 export RACK_ENV="development"
 
