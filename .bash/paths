@@ -4,4 +4,4 @@
 
 export PATH=/usr/local/bin:$PATH
 export PATH=./node_modules/.bin:/usr/local/share/npm/bin:$PATH
-export PATH="/Users/chris/Workspace/elixir_packages/elixir/bin:$PATH"
+#export PATH="/Users/chris/Workspace/elixir_packages/elixir/bin:$PATH"

@@ -16,7 +16,7 @@ ZSH_THEME="blinks"
 # CASE_SENSITIVE="true"
 
 # Uncomment this to disable bi-weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment to change how often before auto-updates occur? (in days)
 # export UPDATE_ZSH_DAYS=13
@@ -79,13 +79,13 @@ fi
 vim_ins_mode="[INS]"
 vim_cmd_mode="[CMD]"
 vim_mode=$vim_ins_mode
-# 
+#
 # function zle-keymap-select {
 #   vim_mode="${${KEYMAP/vicmd/${vim_cmd_mode}}/(main|viins)/${vim_ins_mode}}"
 #   zle reset-prompt
 # }
 # zle -N zle-keymap-select
-# 
+#
 # function zle-line-finish {
 #   vim_mode=$vim_ins_mode
 # }
@@ -102,14 +102,14 @@ setopt transient_rprompt # don't show command modes on previously accepted lines
 
 ZSH_THEME_CLOUD_PREFIX='☁🚀 ☁'
 #ZSH_THEME_CLOUD_PREFIX='☁'
-# 
+#
 # PROMPT='%{$fg_bold[cyan]%}$ZSH_THEME_CLOUD_PREFIX %{$fg_bold[green]%}%p %{$fg[green]%}%c %{$fg_bold[cyan]%}$(git_prompt_info)%{$fg_bold[blue]%} % %{$reset_color%}⚡  '
-# 
+#
 # ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[green]%}[%{$fg[cyan]%}"
 # ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 # ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[green]%}%{$fg[yellow]%}*$fg[green]%}]%{$reset_color%}"
 # ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%}]"
-# 
+#
 
 ZSH_THEME_GIT_PROMPT_PREFIX=" [%{%B%F{blue}%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{%f%k%b%K{${bkg}}%B%F{green}%}]"
@@ -126,5 +126,3 @@ RPROMPT=''
 RPROMPT2=''
 
 set t_Co=256
-
-

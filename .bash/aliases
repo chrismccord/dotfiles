@@ -3,7 +3,8 @@
 alias tmux='tmux -2'
 alias reload='. ~/.bash_profile'
 alias dowork='sudo ruby ~/Documents/scripts/dowork.rb'
-# alias vim='mvim -v'
+alias book='./rake clean screen && open book-screen.pdf'
+alias e="emacsclient -a '' -t"
 
 # git
 #
@@ -15,10 +16,16 @@ function timesheet-copy(){ timesheet | head $1 | pbcopy; }
 
 # Postgres
 #
-alias start_postgres="launchctl load -w ~/Library/LaunchAgents/org.postgresql.postgres.plist"
+alias start_postgres="launchctl load -w ~/.nix-profile/Library/LaunchDaemons/org.nixos.postgres.plist"
 alias stop_postgres="launchctl unload -w ~/Library/LaunchAgents/org.postgresql.postgres.plist"
 alias pg_restore_local="pg_restore --verbose --clean --no-acl --no-owner -h localhost -U `whoami` -d $1 $2"
 
 # Labrador
 #
 alias labrador-start="cd $HOME/.labrador && bundle exec rails s -e production -p 7488"
+
+# hack, ref https://github.com/julienXX/terminal-notifier/issues/115
+alias terminal-notifier='reattach-to-user-namespace terminal-notifier'
+
+alias breaktime="sudo -s -- 'cp /etc/hosts.leisure /etc/hosts; sleep 600; cp /etc/hosts.prod-blocks /etc/hosts'"
+alias worktime="sudo cp /etc/hosts.prod-blocks /etc/hosts"

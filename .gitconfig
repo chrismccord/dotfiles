@@ -2,6 +2,11 @@
   name = Chris McCord
   email = chris@chrismccord.com
 [core]
-	editor = vim
+	editor = emacsclient -a '' -t
+	excludesfile = /Users/chris/.gitignore
 [color]
   ui = 1
+[github]
+	user = chrismccord
+	token = f361a2ffd773a5ada7c5d0e5cef31907f6ef1338
+	oauth-token = f361a2ffd773a5ada7c5d0e5cef31907f6ef1338
