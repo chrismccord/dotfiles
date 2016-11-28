@@ -1,4 +1,2 @@
 #!/usr/bin/env sh
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home"
-export BUNDLER_EDITOR="mvim"
-
