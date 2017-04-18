@@ -3,6 +3,14 @@
 # export PATH=$HOME/local/node/bin:/usr/local/bin:$PATH
 
 export PATH=/usr/local/bin:$PATH
+
+# node
 export PATH=./node_modules/.bin:/usr/local/share/npm/bin:$PATH
-export PATH="/Users/chris/oss/elixir/bin:$PATH"
-. /Users/chris/oss/erlangs/17.0/activate
+
+# erlang / kerl
+. /Users/chris/oss/erlangs/19.2/activate
+
+# elixir / kiex
+kiex use 1.4.0 > /dev/null
+# [[ -s "$HOME/.kiex/scripts/kiex" ]] && source "$HOME/.kiex/scripts/kiex"
+# export PATH="/Users/chris/oss/elixir/bin:$PATH"

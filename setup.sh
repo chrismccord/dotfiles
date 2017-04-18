@@ -5,3 +5,4 @@ ln -s .dotfiles/.gitconfig ~/.gitconfig
 ln -s .dotfiles/.tmux.conf ~/.tmux.conf
 ln -s .dotfiles/.zshenv ~/.zshenv
 ln -s .dotfiles/.zshrc ~/.zshrc
+echo "#\!/usr/bin/env sh" > ~/.bash/secrets

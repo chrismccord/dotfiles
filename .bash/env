@@ -4,3 +4,5 @@ test -s "$HOME/.kiex/scripts/kiex" && source "$HOME/.kiex/scripts/kiex"
 
 # Rails
 export RACK_ENV="development"
+
+source ~/.bash/secrets
