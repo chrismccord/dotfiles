@@ -29,3 +29,4 @@ alias terminal-notifier='reattach-to-user-namespace terminal-notifier'
 
 alias breaktime="sudo -s -- 'cp /etc/hosts.leisure /etc/hosts; sleep 600; cp /etc/hosts.prod-blocks /etc/hosts'"
 alias worktime="sudo cp /etc/hosts.prod-blocks /etc/hosts"
+alias pbpaste_to_rtf="pbpaste | textutil -stdin -stdout -convert rtf | pbcopy"

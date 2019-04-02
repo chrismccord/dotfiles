@@ -2,7 +2,7 @@
   name = Chris McCord
   email = chris@chrismccord.com
 [core]
-	editor = emacsclient -a '' -t
+	editor = emacs
 	excludesfile = /Users/chris/.gitignore
 [color]
   ui = 1

@@ -2,15 +2,37 @@
 # export PATH=/usr/local/bin:$PATH
 # export PATH=$HOME/local/node/bin:/usr/local/bin:$PATH
 
+export JAVA_HOME=$(/usr/libexec/java_home)
+
 export PATH=/usr/local/bin:$PATH
 
 # node
 export PATH=./node_modules/.bin:/usr/local/share/npm/bin:$PATH
 
 # erlang / kerl
-. /Users/chris/oss/erlangs/19.2/activate
+export ERL_AFLAGS="-kernel shell_history enabled"
+. /Users/chris/oss/erlangs/20.1/activate
 
 # elixir / kiex
-kiex use 1.4.0 > /dev/null
+
+# if git rev-parse --git-dir > /dev/null 2>&1; then
+#   export CURRENT_PROJECT_NAME=`basename $(git rev-parse --show-toplevel)`
+# fi
+
+# function current_project_name(){
+#   if git rev-parse --git-dir > /dev/null 2>&1; then
+#     echo `basename $(git rev-parse --show-toplevel)`
+#   else
+#     echo `basename $(pwd)`
+#   fi
+# }
+
+# function elixir-emacs-client(){
+#   emacsclient -s $(current_project_name) $@
+# }
+
+
+export ELIXIR_EDITOR="emacsclient-elixir +__LINE__ __FILE__"
+kiex use 1.8.1 > /dev/null
 # [[ -s "$HOME/.kiex/scripts/kiex" ]] && source "$HOME/.kiex/scripts/kiex"
 # export PATH="/Users/chris/oss/elixir/bin:$PATH"
