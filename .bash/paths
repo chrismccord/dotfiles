@@ -1,17 +1,31 @@
 #!/usr/bin/env sh
-# export PATH=/usr/local/bin:$PATH
-# export PATH=$HOME/local/node/bin:/usr/local/bin:$PATH
+
+# node
+export PATH="/usr/local/opt/node@12/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/node@12/lib"
+export CPPFLAGS="-I/usr/local/opt/node@12/include"
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 
 export PATH=/usr/local/bin:$PATH
 
+# openssl
+
+export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
+export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
+
 # node
 export PATH=./node_modules/.bin:/usr/local/share/npm/bin:$PATH
 
-# erlang / kerl
+# erlang / kerl / elixir
 export ERL_AFLAGS="-kernel shell_history enabled"
-. /Users/chris/oss/erlangs/20.1/activate
+. /Users/chris/oss/erlangs/22.3.4.1/activate
+
+export ELIXIR_EDITOR="code +__LINE__ __FILE__"
+kiex use 1.10.2 > /dev/null
+
+# gigalixir
+export PATH=~/Library/Python/2.7/bin:$PATH
 
 # elixir / kiex
 
@@ -32,7 +46,5 @@ export ERL_AFLAGS="-kernel shell_history enabled"
 # }
 
 
-export ELIXIR_EDITOR="emacsclient-elixir +__LINE__ __FILE__"
-kiex use 1.8.1 > /dev/null
 # [[ -s "$HOME/.kiex/scripts/kiex" ]] && source "$HOME/.kiex/scripts/kiex"
 # export PATH="/Users/chris/oss/elixir/bin:$PATH"

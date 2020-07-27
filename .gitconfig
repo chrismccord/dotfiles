@@ -2,9 +2,11 @@
   name = Chris McCord
   email = chris@chrismccord.com
 [core]
-	editor = emacs
+	editor = code --wait
 	excludesfile = /Users/chris/.gitignore
 [color]
   ui = 1
 [github]
 	user = chrismccord
+[url "git@github.com:"]
+	insteadOf = https://github.com/
