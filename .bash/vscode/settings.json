@@ -1,0 +1,319 @@
+{
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": [
+          "j",
+          "k"
+        ],
+        "after": [
+          "<Esc>"
+        ]
+      }
+    ],
+    "vim.leader": ",",
+    "vim.normalModeKeyBindingsNonRecursive": [
+      {
+        "before": ["<leader>", "%"],
+        "commands": [
+          {
+            "command": "editor.emmet.action.matchTag"
+          }
+        ]
+      },
+      // toggle buffer
+      {
+        "before": [
+          "<leader>",
+          "<leader>"
+        ],
+        "commands": [
+          {
+            "command": "workbench.action.openPreviousEditorFromHistory"
+          },
+          {
+            "command": "workbench.action.acceptSelectedQuickOpenItem"
+          }
+        ]
+      },
+    ],
+    "vim.visualModeKeyBindings": [
+      {
+        "before": ["<leader>", "%"],
+        "commands": [
+          {
+            "command": "editor.emmet.action.matchTag"
+          }
+        ]
+      },
+      {
+        "before": ["Ctrl+j"],
+        "after": ["Ctrl+d"]
+      },
+      {
+        "before": ["Ctrl+K"],
+        "after": ["Ctrl+u"]
+      },
+      {
+        "before": [
+          "<leader>",
+          "c",
+          "c"
+        ],
+        "after": [],
+        "commands": [
+          {
+            "command": "editor.action.commentLine",
+            "args": []
+          }
+        ]
+      },
+      {
+        "before": [
+          "=",
+        ],
+        "after": [],
+        "commands": [
+          {
+            "command": "editor.action.reindentselectedlines",
+            "args": []
+          }
+        ]
+      },
+    ],
+    "vim.normalModeKeyBindings": [
+      {
+        "before": ["Ctrl+j"],
+        "after": ["Ctrl+d"]
+      },
+      {
+        "before": ["Ctrl+K"],
+        "after": ["Ctrl+u"]
+      },
+      {
+        "before": [
+          "<leader>",
+          "g"
+        ],
+        "after": [
+          "g",
+          "d"
+        ]
+      },
+      {
+        "before": [
+          "<leader>",
+          "c",
+          "c"
+        ],
+        "after": [],
+        "commands": [
+          {
+            "command": "editor.action.commentLine",
+            "args": []
+          }
+        ]
+      },
+      {
+        "before": [
+          "<leader>",
+          "w"
+        ],
+        "after": [],
+        "commands": [
+          {
+            "command": "workbench.action.closeActiveEditor",
+            "args": []
+          }
+        ]
+      },
+      {
+        "before": [
+          "<leader>",
+          "t"
+        ],
+        "after": [],
+        "commands": [
+          {
+            "command": "workbench.action.quickOpen",
+            "args": []
+          }
+        ]
+      },
+      {
+        "before": [
+          "<leader>",
+          "n",
+          "n"
+        ],
+        "after": [],
+        "commands": [
+          {
+            "command": "workbench.action.toggleSidebarVisibility",
+            "args": []
+          },
+          {
+            "command": "workbench.view.explorer",
+            "args": []
+          }
+        ],
+        "when": "workbench.view.explorerFocus"
+      },
+      {
+        "before": [
+          "<leader>",
+          "n",
+          "n"
+        ],
+        "after": [],
+        "commands": [
+          {
+            "command": "workbench.action.toggleSidebarVisibility",
+            "args": []
+          },
+        ],
+        "when": "!workbench.view.explorerFocus"
+      },
+      {
+        "before": [
+          "<leader>",
+          "w"
+        ],
+        "after": [],
+        "commands": [
+          {
+            "command": "workbench.action.closeActiveEditor",
+            "args": []
+          }
+        ]
+      },
+      {
+        "before": [
+          "<leader>",
+          "m",
+          "f"
+        ],
+        "after": [],
+        "commands": [
+          {
+            "command": "editor.action.commentLine",
+            "args": []
+          }
+        ]
+      }
+    ],
+    "editor.minimap.enabled": false,
+    "elixirLS.dialyzerEnabled": false,
+    "elixirLS.suggestSpecs": false,
+    "elixirLS.fetchDeps": false,
+    "vim.ignorecase": false,
+    "vim.visualstar": true,
+    "workbench.statusBar.visible": true,
+    "workbench.editor.enablePreview": false,
+    "workbench.activityBar.visible": false,
+    "vscodeWorkspaceSwitcher.paths": [
+      "~/oss",
+      "~/work"
+    ],
+    "window.nativeTabs": true,
+    "terminal.integrated.commandsToSkipShell": [
+      "-workbench.action.quickOpen",
+      "vscodeWorkspaceSwitcher.switchWorkspace",
+      "workbench.action.togglePanelPosition"
+    ],
+    "workbench.editor.showTabs": true,
+    "window.zoomLevel": 1,
+    "editor.tokenColorCustomizations": {
+      "[dark+(elixir)]": {
+        "textMateRules": [
+          {
+            "name": "Customizations",
+            "scope": [
+              "punctuation.definition.constant.elixir"
+            ],
+            "settings": {
+              "foreground": "#9CDCFE"
+            },
+          },
+        ]
+      }
+    },
+    // status bar
+    "workbench.colorCustomizations": {
+      "editor.functionForeground": "ff0000",
+      "statusBar.background" : "#252526",
+      "statusBar.noFolderBackground" : "#212121",
+      "statusBar.debuggingBackground": "#263238",
+      // "editor.background": "#3F3D56"
+    },
+    // reduce width of linum col (3 cols really)
+    "editor.folding": false,
+    "editor.glyphMargin": false,
+    "editor.tabSize": 2,
+    "macros": {
+      "maximizeEditor": [
+          "workbench.action.togglePanel",
+          "workbench.action.focusLeftGroup",
+      ]
+    },
+    // "vscodeWorkspaceSwitcher.codeExecutable": "code-oss",
+    "vscodeWorkspaceSwitcher.codeExecutable": "code",
+    "terminal.integrated.macOptionClickForcesSelection": true,
+    "files.associations": {"*.leex": "html-eex"},
+    "files.trimTrailingWhitespace": true,
+    "scrolloff.scrolloff": 3,
+    "editor.parameterHints.enabled": false,
+    // "editor.quickSuggestions": false,
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.wordBasedSuggestions": false,
+    // "editor.quickSuggestionsDelay": 1000000,
+
+    // "editor.snippetSuggestions": "none",
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.currentLine.enabled": false,
+    "gitlens.blame.heatmap.enabled": false,
+    "cSpell.showStatus": false,
+    "breadcrumbs.enabled": false,
+    "files.watcherExclude": {
+      "**/.git": true,
+      "**/tmp/**": true,
+      "**/.git/objects/**": true,
+      "**/.git/subtree-cache/**": true,
+      "**/*.beam": true,
+      "**/node_modules/**": true,
+      "**/.elixir_ls": true
+    },
+    "files.exclude": {
+      "**/.git": true,
+      "**/tmp/**": true,
+      "**/.git/objects/**": true,
+      "**/.git/subtree-cache/**": true,
+      "**/*.beam": true,
+      "**/node_modules": true,
+      "**/.elixir_ls": true
+    },
+    "search.exclude": {
+      "**/.git": true,
+      "**/tmp/**": true,
+      "**/.git/objects/**": true,
+      "**/.git/subtree-cache/**": true,
+      "**/*.beam": true,
+      "**/node_modules": true,
+      "**/.elixir_ls": true
+    },
+    "editor.hover.enabled": false,
+    "workbench.colorTheme": "dark+(elixir)",
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.showExpandedAbbreviation": "never",
+    "emmet.includeLanguages": {
+      "HTML (EEx)": "html",
+      "elixir": "html",
+    },
+    "workbench.startupEditor": "none",
+    "[elixir]": {
+      "editor.defaultFormatter": "JakeBecker.elixir-ls"
+    }
+}
